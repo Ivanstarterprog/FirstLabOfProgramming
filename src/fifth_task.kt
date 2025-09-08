@@ -13,5 +13,4 @@ fun main(args: Array<String>) {
         .forEach { ( key, value ) ->
             println("$key $value")
         }
-
 }
