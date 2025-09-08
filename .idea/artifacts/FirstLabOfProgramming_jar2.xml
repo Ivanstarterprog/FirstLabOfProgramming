@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="FirstLabOfProgramming:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/FirstLabOfProgramming_jar</output-path>
+  <artifact type="jar" name="FirstLabOfProgramming:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/FirstLabOfProgramming_jar2</output-path>
     <root id="archive" name="FirstLabOfProgramming.jar">
       <element id="module-output" name="FirstLabOfProgramming" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/2.2.0/kotlin-stdlib-2.2.0.jar" path-in-jar="/" />
