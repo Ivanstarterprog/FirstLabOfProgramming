@@ -3,7 +3,9 @@ fun main(args: Array<String>) {
         println("При запуске программы необходимо указать аргументы")
         return
     }
-    for (word in args){
+    val sortedArgs = args.sorted()
+    val argsWithoutReapetedWords = sortedArgs.distinct()
+    for (word in argsWithoutReapetedWords){
         println(word)
     }
 }

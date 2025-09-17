@@ -1,5 +1,8 @@
 ### IntelliJ IDEA ###
+.idea
+src/META-INF
 out/
+FirstLabOfProgramming.iml
 !**/src/main/**/out/
 !**/src/test/**/out/
 
