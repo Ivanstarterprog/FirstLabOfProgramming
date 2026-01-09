@@ -1,18 +1,21 @@
 fun main(args: Array<String>) {
-    val inputText: List<String>
+    countAndSortArgs(readInput(args))
+}
 
-    if (args.isEmpty()) {
-        inputText = readLine()?.split(" ")?.filter { it.isNotBlank() } ?: emptyList()
+fun readInput(args: Array<String>): List<String>{
+    return if (args.isEmpty()) {
+        readLine()?.split(" ")?.filter { it.isNotBlank() } ?: emptyList()
     } else {
-        inputText = args.toList()
+        args.toList()
     }
-    inputText.groupingBy { it }
+}
+
+fun countAndSortArgs(words: List<String>){
+    words.sorted()
+        .groupingBy { it }
         .eachCount()
         .toList()
-        .sortedWith(
-            compareByDescending<Pair<String, Int>> { it.second }
-                .thenBy { it.first }
-        )
+        .sortedByDescending { it.second }
         .forEach { (key, value) ->
             println("$key $value")
         }
